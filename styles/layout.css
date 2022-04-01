@@ -9,6 +9,18 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.side-header:hover {
+    width: 206px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #F7F6FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: width 2s;
+}
+
+
+
 .logo {
     width: 68px;
     height: 34px;
@@ -24,20 +36,12 @@
     margin-bottom: 31.97px;
 }
 
-header:hover {
-    width: 206px;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background: #F7F6FF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 nav > .home-link > .home-img{
-    float: left;
+    display:block;
     width: 89px;
     height: 57px;
     padding:  16px 32px;
+
     margin-left: 11px;
     border-radius: 25px 0px 0px 25px;
     margin-bottom: 18px;
@@ -52,7 +56,7 @@ nav > .home-link > .home-img:hover {
     cursor: pointer;}
 
 nav > .callandar-link >.callendar-img {
-    float: left;
+    display: block;
     width: 89px;
     height: 57px;
     padding:  16px 32px;
@@ -71,7 +75,7 @@ nav > .callandar-link> .callendar-img:hover {
 }
 
 nav > .fe-link > .fe-img {
-    float: left;
+    display:block;
     width: 89px;
     height: 57px;
     padding:  16px 32px;
@@ -84,17 +88,13 @@ nav > .fe-text {
     display:none;
 }
 
-nav > .fe-link > .fe-text {
-    display: none;
-}
-
 nav > .fe-link > .fe-img:hover {
     background-color: #fff;
     cursor: pointer;
 }
 
 nav > .games-link >.games-img {
-    float: left;
+    display: block;
     width: 89px;
     height: 57px;
     padding: 16px 25px;
