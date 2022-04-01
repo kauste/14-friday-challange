@@ -2,7 +2,6 @@
 .side-header {
     width: 100px;
     height: 100%;
-    left: 0px;
     top: calc(50% - 100%/2);
     display: inline-block;
     background: #F7F6FF;
@@ -12,8 +11,6 @@
 .side-header:hover {
     width: 206px;
     height: 100%;
-    left: 0px;
-    top: 0px;
     background: #F7F6FF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: width 2s;
@@ -38,8 +35,15 @@
     margin-bottom: 31.97px;
 }
 
+nav {
+    width:fit-content;
+}
+
+nav > .home-link {
+    width:fit-content
+}
 nav > .home-link > .home-img{
-    display:block;
+    float:left;
     width: 89px;
     height: 57px;
     padding:  16px 32px;
@@ -56,6 +60,9 @@ nav > .home-link > .home-img:hover {
     background-color: #fff;
     cursor: pointer;}
 
+nav > .callandar-link {
+        width:fit-content   
+}
 nav > .callandar-link >.callendar-img {
     display: block;
     width: 89px;
@@ -75,6 +82,9 @@ nav > .callandar-link> .callendar-img:hover {
     cursor: pointer;
 }
 
+nav > .fe-link {
+    width:fit-content   
+}
 nav > .fe-link > .fe-img {
     display:block;
     width: 89px;
@@ -104,6 +114,9 @@ nav > .games-link >.games-img {
     margin-bottom: 18px;
 }
 
+nav > .games-link {
+    width:fit-content   
+}
 nav > .games-text {
     display: none;
 }
@@ -114,26 +127,27 @@ nav > .games-link > .games-img:hover {
 }
 
 footer {
-    position:relative
+    width: fit-content ;
+    height: fit-content;
+    position: absolute;
+    bottom: 35px;
+    left:50%;
+    transform: translate(-50%);
 }
 footer > .long-line {
-    position: absolute;
-    border: 1px solid #02577A;
     width: 346.01px;
-    margin-left:50%;
-    transform: translate(-50%);
-    bottom: 35px;
+    border: 1px solid #02577A;
+    margin-bottom: 11px;
+    
+    
 }
 
 footer > .bit {
+    width:100%;
     text-transform: capitalize;
     color: var(--dark-blue);
     font-size: 11px;
-    position: absolute;
     font-weight: 500;
-    margin-left:50%;
-    transform: translate(-50%);
-    bottom: 11px;
-    line-height: 13.41px
-
+    line-height: 13.41px;
+    text-align:center;
 }
