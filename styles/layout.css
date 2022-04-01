@@ -1,0 +1,84 @@
+
+.side-header {
+    width: 100px;
+    height: 100%;
+    left: 0px;
+    top: calc(50% - 100%/2);
+    display: inline-block;
+    background: #F7F6FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    width: 68px;
+    height: 34px;
+    left: 16px;
+    top: calc(50% - 34px/2 - 384px);
+    margin: 52px 16px 24.03px 16px;
+}
+
+.line {
+    border:  2px solid #C4C4C4;
+    margin-left: 18px;
+    width: 62.24px;
+    margin-bottom: 31.97px;
+}
+
+
+nav > .home-img{
+    float: left;
+    width: 89px;
+    height: 57px;
+    padding:  16px 32px;
+    margin-left: 5px;
+    border-radius: 25px 0px 0px 25px;
+    fill: #C4C4C4;
+}
+nav > .home-img:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+nav > .callendar-img {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 34px 0 34px 37px;
+}
+
+nav > .fe {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 0 0 34px 37px;
+}
+
+nav > .games {
+    float: left;
+    width: 40px;
+    height: 25px;
+    margin-left: 30px;
+}
+footer {
+    position:relative
+}
+footer > .long-line {
+    position: absolute;
+    border: 1px solid #02577A;
+    width: 346.01px;
+    margin-left:50%;
+    transform: translate(-50%);
+    bottom: 35px;
+}
+
+footer > .bit {
+    text-transform: capitalize;
+    color: var(--dark-blue);
+    font-size: 11px;
+    position: absolute;
+    font-weight: 500;
+    margin-left:50%;
+    transform: translate(-50%);
+    bottom: 11px;
+    line-height: 13.41px
+
+}

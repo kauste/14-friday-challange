@@ -1,0 +1,20 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light-blue);
+    height:100vh;
+}
+
+:root {
+    --light-blue: #EBEEF5;
+    --dark-blue: #02577A;
+    --grey: #C4C4C4
+}
