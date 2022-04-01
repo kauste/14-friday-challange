@@ -25,39 +25,64 @@
 }
 
 
-nav > .home-img{
+nav > .home-link > .home-img{
     float: left;
     width: 89px;
     height: 57px;
     padding:  16px 32px;
-    margin-left: 5px;
+    margin-left: 11px;
     border-radius: 25px 0px 0px 25px;
-    fill: #C4C4C4;
+    margin-bottom: 18px;
 }
-nav > .home-img:hover {
+nav > .home-link > .home-img:hover {
     background-color: #fff;
     cursor: pointer;
 }
-nav > .callendar-img {
+nav > .callandar-link >.callendar-img {
     float: left;
-    width: 25px;
-    height: 25px;
-    margin: 34px 0 34px 37px;
+    width: 89px;
+    height: 57px;
+    padding:  16px 32px;
+    margin-left: 11px;
+    border-radius: 25px 0px 0px 25px;
+    margin-bottom: 18px;
+}   
+
+nav > .callandar-link> .callendar-img:hover {
+    background-color: #fff;
+    cursor: pointer;
 }
 
-nav > .fe {
+nav > .fe-link > .fe-img {
     float: left;
-    width: 25px;
-    height: 25px;
-    margin: 0 0 34px 37px;
+    width: 89px;
+    height: 57px;
+    padding:  16px 32px;
+    margin-left: 11px;
+    border-radius: 25px 0px 0px 25px;
+    margin-bottom: 18px;
 }
 
-nav > .games {
-    float: left;
-    width: 40px;
-    height: 25px;
-    margin-left: 30px;
+nav > .fe-link > .fe-img:hover {
+    background-color: #fff;
+    cursor: pointer;
 }
+
+nav > .games-link >.games-img {
+    float: left;
+    width: 89px;
+    height: 57px;
+    padding: 16px 25px;
+    margin-left: 11px;
+    border-radius: 25px 0px 0px 25px;
+    margin-bottom: 18px;
+}
+
+nav > .games-link > .games-img:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
 footer {
     position:relative
 }
