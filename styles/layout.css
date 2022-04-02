@@ -18,7 +18,10 @@
     
 }
 
-
+.side-header:hover .text {
+    display: block;
+    margin-left:20px;
+}
 
 .logo {
     width: 68%;
@@ -39,10 +42,13 @@ nav {
     width:fit-content;
 }
 
-nav > .home-link {
+.box {
+    width: fit-content;
+}
+nav > .box > .link {
     width:fit-content
 }
-nav > .home-link > .home-img{
+nav > .box > .link > .img{
     float:left;
     width: 89px;
     height: 57px;
@@ -52,40 +58,19 @@ nav > .home-link > .home-img{
     margin-bottom: 18px;
 }
 
-nav > .home-text {
+nav > .box > .text {
     display:none;
 }
 
-nav > .home-link > .home-img:hover {
+nav > .box > .link > .img:hover {
     background-color: #fff;
     cursor: pointer;}
 
-nav > .callandar-link {
-        width:fit-content   
-}
-nav > .callandar-link >.callendar-img {
-    display: block;
-    width: 89px;
-    height: 57px;
-    padding:  16px 32px;
-    margin-left: 11px;
-    border-radius: 25px 0px 0px 25px;
-    margin-bottom: 18px;
-}   
 
-nav > .callendar-text {
-    display:none;
-}
-
-nav > .callandar-link> .callendar-img:hover {
-    background-color: #fff;
-    cursor: pointer;
-}
-
-nav > .fe-link {
+nav > .box > .fe-link {
     width:fit-content   
 }
-nav > .fe-link > .fe-img {
+nav > .box > .fe-link > .fe-img {
     display:block;
     width: 89px;
     height: 57px;
@@ -95,33 +80,11 @@ nav > .fe-link > .fe-img {
     margin-bottom: 18px;
 }
 
-nav > .fe-text {
+nav > .box > .fe-text {
     display:none;
 }
 
-nav > .fe-link > .fe-img:hover {
-    background-color: #fff;
-    cursor: pointer;
-}
-
-nav > .games-link >.games-img {
-    display: block;
-    width: 89px;
-    height: 57px;
-    padding: 16px 25px;
-    margin-left: 11px;
-    border-radius: 25px 0px 0px 25px;
-    margin-bottom: 18px;
-}
-
-nav > .games-link {
-    width:fit-content   
-}
-nav > .games-text {
-    display: none;
-}
-
-nav > .games-link > .games-img:hover {
+nav > .box > .fe-link > .fe-img:hover {
     background-color: #fff;
     cursor: pointer;
 }
