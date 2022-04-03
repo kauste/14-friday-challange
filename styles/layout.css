@@ -44,6 +44,8 @@ nav {
 
 .box {
     width: fit-content;
+    display: flex;
+    object-position: left;
 }
 nav > .box > .link {
     width:fit-content
@@ -60,6 +62,11 @@ nav > .box > .link > .img{
 
 nav > .box > .text {
     display:none;
+    margin-top: 20px;
+    color: var(--grey);
+    text-decoration: none;
+   object-fit: contain;
+    
 }
 
 nav > .box > .link > .img:hover {
