@@ -90,10 +90,8 @@ nav > .box > .fe-text {
     text-decoration: none;
 }
 
-
-
 .home-page {
-    object-fit: cover;
+    width:calc(100vw - 102px);
     height: 53%;
 }
 
@@ -133,7 +131,7 @@ time {
 .home-img {
     object-fit: contain;
     object-position: right;
-    height: 65vh;
+    min-width:calc(100vw - 102px);
     float:left;
     margin-left: 100px;
 }
