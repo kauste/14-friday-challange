@@ -156,10 +156,12 @@ time {
     .top-left-column {
         font-size: 29px;
         line-height: 35px;
+        margin-bottom: 10px;
     }
 
     .top-right-column {
     padding: 22px 20px 22px 20px;
+    margin-top: 10px;
     }
 
     .bottom-row {
