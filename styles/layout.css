@@ -1,15 +1,16 @@
-
+@import '../global.css';
 .nav {
     width: 100px;
     height: 100%;
     top: calc(50% - 100%/2);
     position: fixed;
-    float: left;
+    left:0;
+    top: 0;
+    bottom: 0;
     background: #F7F6FF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
-
 .nav:hover {
     width: 206px;
     max-width: 206px;
@@ -17,7 +18,6 @@
     background: #F7F6FF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: width 1.5s;
-    position: fixed;
 }
 
 .nav:hover .text {
@@ -28,16 +28,13 @@
     text-align: center;
     text-decoration: solid;
 }
-
 .logo {
     width: 68%;
     height: 34px;
     left: 16px;
     top: calc(50% - 34px/2 - 384px);
     margin: 52px 16% 24.03px 16%;
-    
 }
-
 .line {
     height: 2px;
     background-color: var(--grey);
@@ -45,16 +42,13 @@
     width: 62.24%;
     margin-bottom: 31.97px;
 }
-
 .box {
     display: flex;
     object-position: left;
     border-radius: 25px 0px 0px 25px;
     margin: 34px 0 34px 36px;
-    align-items: center;
-    
+    align-items: center;  
 }
-
 .nav > .box:hover {
     max-width: 100%;
     cursor: pointer;
@@ -66,23 +60,19 @@
     background-color: #fff;
     padding: 16px;
 }
-
 nav > .box > .img{
     width: 25px;
     height: 25px; 
 }
-
 nav > .box > .text {
     visibility: hidden;
     color: var(--grey);
     text-decoration: none;
 }
-
 nav > .box > .fe-img {
     width: 25px;
     height: 25px;
 }
-
 nav > .box > .fe-text {
     visibility: hidden;
     margin-top: 20px;
@@ -91,26 +81,29 @@ nav > .box > .fe-text {
 }
 
 .home-page {
-    width:100vw;
-    margin-left: 100px;;
+    width: calc(100vw - 100px);
+    margin-left: 100px;
+    margin-top: 56px;
 }
-
+.home-top-row{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .top-left-column {
-    width: 341px;
-    float: left;
-    margin: 89px 0 37px 206px;
+    width: 516px;
+    height: 80px;
     font-size: 36px;
     line-height: 43.88px;
     font-weight: 500;
 }
 
 .top-right-column {
-    float: left;
+    height: 147px;
     width: fit-content;
     background-color: #fff;
     padding: 22px 96px 22px 96px;
     border-radius: 25px;
-    margin: 56px 0 23px 310px;
 }
  
 time {
@@ -129,14 +122,19 @@ time {
 }
 
 .home-img {
-    object-fit: contain;
-    object-position: right;
-    width:calc(100% - 100px);
-    float:left;
-    
+    background-image: url(../img/workplace-results-professional-report-accounting-during\ 1.png);
+    height: 432px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 23px;
 }
+.quate-container{
+    width:100%;
+    height: 121px;
+}
+
 .bottom-row {
-    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -145,53 +143,66 @@ time {
     padding: 49px 185px 49px 185px;
     border: #02577A solid 2px;
     border-radius: 25px;
+    text-align: center;
     float: left;
-    margin-left: 50vw;
+    margin-left:50%;
     transform: translateX(-50%);
     margin-top: 49px;
-    margin-bottom:43px;
-    }
+    margin-bottom: 43px;
+}
 
 @media only screen and (max-width: 1160px) {
     .top-left-column {
         font-size: 29px;
         line-height: 35px;
-        margin-bottom: 10px;
+        margin-bottom: 33px;
+        width: 300px;
+        margin-top: 33px;
     }
 
     .top-right-column {
     padding: 22px 20px 22px 20px;
-    margin-top: 10px;
     }
-
     .bottom-row {
     padding: 49px;
     width: 626px;
     }
 }
-@media only screen and (max-width: 910px) {
-    .top-right-column {
-        float: left;
-        margin-left: 206px;
+@media only screen and (max-width: 880px) {
+    .home-top-row{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-left: 10%;
+       
     }
+    .bottom-row{
+        display:inline-block;
+        width: 433px;
+        height: 121px;
+    }     
+
 }
 
-footer {
-   
-}
+
 footer > .bit {
-    width:calc(100% - 100px);
     text-transform: capitalize;
     color: var(--dark-blue);
     font-size: 11px;
     font-weight: 500;
     line-height: 13.41px;
     text-align:center;
-    border-top: 2px solid #02577A;
     width: 346px;
     padding: 11px 11px;
-    float: left;
-    margin-left: 50%;
+    margin-left:calc(50% + 37px);
     transform: translateX(-50%);
-    height: 40px;
+    position: relative;
+    }
+    footer > .bit::before {
+        content: '';
+        display:block;
+        position: absolute;
+        height:1px;
+        width:346px;
+        background-color:  #02577A;
+        bottom: 33px;
     }
