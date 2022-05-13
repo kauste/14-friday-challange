@@ -23,8 +23,7 @@
 .nav:hover .text {
     visibility: visible;
     margin-left:20px;
-    transition-duration: 0.5s;
-    transition-delay: 0.7s;
+    transition: visibility 0.5s ease-out 0.5s;
     text-align: center;
     text-decoration: solid;
 }
@@ -47,27 +46,35 @@
     object-position: left;
     border-radius: 25px 0px 0px 25px;
     margin: 34px 0 34px 36px;
-    align-items: center;  
+    align-items: center;
+    text-decoration: none; 
 }
 .nav > .box:hover {
     max-width: 100%;
     cursor: pointer;
-    transition: opacity 0.5s linear;
-    transition-delay: 0.2s;
+}
+.nav > .box:hover .text{
+    color: #02577A;
     text-decoration: underline;
 }
-.nav > .box:active {
+.nav > .box.active {
     background-color: #fff;
     padding: 16px;
+    margin-left: 20px;
 }
-nav > .box > .img{
+nav > .box > svg {
+    height: 25px;
     width: 25px;
-    height: 25px; 
+    fill: var(--grey);
+}
+nav > .box  .img{
+    width: 25px;
+    height: 25px;
+    fill: var(--grey);
 }
 nav > .box > .text {
     visibility: hidden;
     color: var(--grey);
-    text-decoration: none;
 }
 nav > .box > .fe-img {
     width: 25px;
@@ -77,7 +84,6 @@ nav > .box > .fe-text {
     visibility: hidden;
     margin-top: 20px;
     color: var(--grey);
-    text-decoration: none;
 }
 
 
@@ -96,10 +102,10 @@ footer > .bit {
     text-align:center;
     width: 346px;
     padding: 11px 11px;
-    margin-left:calc(50% + 37px);
+    margin-left:calc(50% + 100px);
     transform: translateX(-50%);
     position: relative;
-   
+    bottom: 0px;
     }
     footer > .bit::before {
         content: '';

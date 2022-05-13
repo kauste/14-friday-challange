@@ -10,10 +10,6 @@ body * {
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--light-blue);
-    display: inline-block;
-    min-height: 100vh;
-    max-width: 100vw;
-    overflow-x: hidden;
 }
 
 :root {

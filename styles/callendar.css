@@ -10,8 +10,8 @@
 .left-column {
    width:54%;
    display:flex;
-   flex-wrap: wrap;
-   justify-content: center;
+   flex-direction: column;
+   align-items: center;
 }
 
 .task-box {
@@ -68,6 +68,7 @@
 }
 .plus-row {
     width: 570px;
+    margin-bottom: 40px;;
 }
 
 .plus {
@@ -80,6 +81,7 @@
     color: #fff;
     font-weight: 500;
     font-size: 32px;
+    border:none;
 }
 .plus:hover {
     cursor: pointer;
@@ -131,7 +133,7 @@
 .weekdays {
     width: 100%;
     font-weight: 500;
-
+    font-size: 24px;
     color: var(--grey); 
 }
 .weekdays::after {
@@ -159,6 +161,10 @@
     line-height: 29px;
     color: var(--grey);
 }
+.day {
+    background-color: transparent;
+    border:none;
+}
 
 .day:active{
     background-color: var(--dark-blue);
@@ -174,11 +180,13 @@
 }
 
 @media (max-width: 1300px){
-
-
     .callendar-page{
         flex-direction: column-reverse;
-        row-gap: 40px;
+        row-gap: 25px;
+    }
+    .task-box {
+        margin-bottom: 25px;
+        width: 600px;
     }
     .right-column{
         display:flex;

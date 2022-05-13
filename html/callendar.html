@@ -13,22 +13,22 @@
     <nav class=" nav">
         <img class = "logo" src = "../assets/logo.svg" alt = "logo">
         <hr class="line">
-        <div class="box">
-            <img class="img" src ="../assets/Home.svg" alt="home icon">
-            <a class="text" href="../index.html">Home</a>
-        </div>
-        <div class="box">
+        <a class="box active" href="../index.html">
+            <img class="img  " src ="../assets/Home.svg" alt="home icon">
+            <span class="text" >Home</span>
+        </a>
+        <a class="box" href="#">
             <img class="img" src="../assets/Callendar.svg" alt="callendar icon">
-            <a class="text" href="../html/callendar.html" >Callendar</a>
-        </div>
-        <div class="box">
+            <span class="text" >Callendar</span>
+        </a>
+        <a class="box" href="#">
             <img class="fe-img" src="../assets/FE.svg" alt="FE icon">
-            <a class="text" href="#" >Fe</a>
-        </div>
-        <div class="box">
+            <span class="text"  >Fe</span>
+        </a>
+        <a class="box" href="#">
             <img class="img" src="../assets/Games.svg" alt="Games icon">
-            <a class="text" href="#">Games</a>
-        </div>
+            <span class="text" >Games</span>
+        </a>
     </nav>
     <main class ="callendar-page">
         <div class="left-column">
@@ -50,7 +50,7 @@
                 <p class ="task">Use isset()</p>
             </div>
             <div class="plus-row">
-                <div class ="plus">+</div>
+                <button type="button" class ="plus">+</button>
             </div>
         </div>
         <div class="right-column">
@@ -76,58 +76,58 @@
                     </div>
                     <div class="month-days">
                         <div class="week first-week">
-                            <span class="day not-this-month">27</span>
-                            <span class="day not-this-month">28</span>
-                            <span class="day not-this-month">29</span>
-                            <span class="day not-this-month">30</span>
-                            <span class="day not-this-month">31</span>
-                            <span class="day this-month">1</span>
-                            <span class="day this-month">2</span>
+                            <button class="day not-this-month">27</button>
+                            <button type="button" class="day not-this-month">28</button type="button">
+                            <button type="button" class="day not-this-month">29</button type="button">
+                            <button type="button" class="day not-this-month">30</button type="button">
+                            <button type="button" class="day not-this-month">31</button type="button">
+                            <button type="button" class="day this-month">1</button type="button">
+                            <button type="button" class="day this-month">2</button type="button">
                         </div>
                         <div class="week second-week">
-                            <span class="day this-month">3</span>
-                            <span class="day this-month">4</span>
-                            <span class="day this-month">5</span>
-                            <span class="day this-month">6</span>
-                            <span class="day this-month">7</span>
-                            <span class="day this-month">8</span>
-                            <span class="day this-month">9</span>
+                            <button type="button" class="day this-month">3</button type="button">
+                            <button type="button" class="day this-month">4</button type="button">
+                            <button type="button" class="day this-month">5</button type="button">
+                            <button type="button" class="day this-month">6</button type="button">
+                            <button type="button" class="day this-month">7</button type="button">
+                            <button type="button" class="day this-month">8</button type="button">
+                            <button type="button" class="day this-month">9</button type="button">
                         </div>
                         <div class="week third-week">
-                            <span class="day this-month">10</span>
-                            <span class="day this-month">11</span>
-                            <span class="day this-month">12</span>
-                            <span class="day this-month">13</span>
-                            <span class="day this-month">14</span>
-                            <span class="day this-month">15</span>
-                            <span class="day this-month">16</span>
+                            <button type="button" class="day this-month">10</button type="button">
+                            <button type="button" class="day this-month">11</button type="button">
+                            <button type="button" class="day this-month">12</button type="button">
+                            <button type="button" class="day this-month">13</button type="button">
+                            <button type="button" class="day this-month">14</button type="button">
+                            <button type="button" class="day this-month">15</button type="button">
+                            <button type="button" class="day this-month">16</button type="button">
                         </div>
                         <div class="week fourth-week">
-                            <span class="day this-month">17</span>
-                            <span class="day this-month">18</span>
-                            <span class="day this-month">19</span>
-                            <span class="day this-month">20</span>
-                            <span class="day this-month">21</span>
-                            <span class="day this-month">22</span>
-                            <span class="day this-month">23</span>
+                            <button type="button" class="day this-month">17</button type="button">
+                            <button type="button" class="day this-month">18</button type="button">
+                            <button type="button" class="day this-month">19</button type="button">
+                            <button type="button" class="day this-month">20</button type="button">
+                            <button type="button" class="day this-month">21</button type="button">
+                            <button type="button" class="day this-month">22</button type="button">
+                            <button type="button" class="day this-month">23</button type="button">
                         </div>
                         <div class="week fifth-week">
-                            <span class="day this-month">24</span>
-                            <span class="day this-month">25</span>
-                            <span class="day this-month">26</span>
-                            <span class="day this-month">27</span>
-                            <span class="day this-month">28</span>
-                            <span class="day this-month">29</span>
-                            <span class="day this-month">30</span>
+                            <button type="button" class="day this-month">24</button type="button">
+                            <button type="button" class="day this-month">25</button type="button">
+                            <button type="button" class="day this-month">26</button type="button">
+                            <button type="button" class="day this-month">27</button type="button">
+                            <button type="button" class="day this-month">28</button type="button">
+                            <button type="button" class="day this-month">29</button type="button">
+                            <button type="button" class="day this-month">30</button type="button">
                         </div>
                         <div class="week sixth-week">
-                            <span class="day this-month">31</span>
-                            <span class="day not-this-month">1</span>
-                            <span class="day not-this-month">2</span>
-                            <span class="day not-this-month">3</span>
-                            <span class="day not-this-month">4</span>
-                            <span class="day not-this-month">5</span>
-                            <span class="day not-this-month">6</span>
+                            <button type="button" class="day this-month">31</button type="button">
+                            <button type="button" class="day not-this-month">1</button type="button">
+                            <button type="button" class="day not-this-month">2</button type="button">
+                            <button type="button" class="day not-this-month">3</button type="button">
+                            <button type="button" class="day not-this-month">4</button type="button">
+                            <button type="button" class="day not-this-month">5</button type="button">
+                            <button type="button" class="day not-this-month">6</button type="button">
                         </div>
                         
                     </div>
