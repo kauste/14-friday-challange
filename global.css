@@ -11,7 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--light-blue);
     display: inline-block;
- 
+    min-height: 100vh;
     max-width: 100vw;
     overflow-x: hidden;
 }
@@ -19,5 +19,5 @@ body {
 :root {
     --light-blue: #EBEEF5;
     --dark-blue: #02577A;
-    --grey: #C4C4C4
+    --grey: #C4C4C4;
 }

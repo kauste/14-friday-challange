@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="../styles/callendar.css">
+    <link rel="stylesheet" href ="../styles/3rd-party/all.min.css">
+    <title>Callendar</title>
+</head>
+<body>
+    <nav class=" nav">
+        <img class = "logo" src = "../assets/logo.svg" alt = "logo">
+        <hr class="line">
+        <div class="box">
+            <img class="img" src ="../assets/Home.svg" alt="home icon">
+            <a class="text" href="../index.html">Home</a>
+        </div>
+        <div class="box">
+            <img class="img" src="../assets/Callendar.svg" alt="callendar icon">
+            <a class="text" href="../html/callendar.html" >Callendar</a>
+        </div>
+        <div class="box">
+            <img class="fe-img" src="../assets/FE.svg" alt="FE icon">
+            <a class="text" href="#" >Fe</a>
+        </div>
+        <div class="box">
+            <img class="img" src="../assets/Games.svg" alt="Games icon">
+            <a class="text" href="#">Games</a>
+        </div>
+    </nav>
+    <main class ="callendar-page">
+        <div class="left-column">
+            <div class="task-box">
+                <span class="dots">...</span>
+                <h3 class="domain">SCSS</h3>
+                <p class ="task">Try mixin</p>
+
+            </div>
+            <div class="task-box">
+                <span class="dots">...</span>
+                <h3 class="domain">React</h3>
+                <p class ="task">Lift state up</p>
+
+            </div>
+            <div class="task-box">
+                <span class="dots">...</span>
+                <h3 class="domain">PHP</h3>
+                <p class ="task">Use isset()</p>
+            </div>
+            <div class="plus-row">
+                <div class ="plus">+</div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="callendar">
+                <div class="month-raw">
+                    <a class="arrow-icon" href="#">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </a>
+                    <p class="month">Januarry</p>
+                    <a class="arrow-icon" href="#">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+                <div class="callendar-raw">
+                    <div class="weekdays">
+                        <span class="weekday">Mon</span>
+                        <span class="weekday">Tue</span>
+                        <span class="weekday">Wed</span>
+                        <span class="weekday">Thu</span>
+                        <span class="weekday">Fri</span>
+                        <span class="weekday">Sat</span>
+                        <span class="weekday">Sun</span>
+                    </div>
+                    <div class="month-days">
+                        <div class="week first-week">
+                            <span class="day not-this-month">27</span>
+                            <span class="day not-this-month">28</span>
+                            <span class="day not-this-month">29</span>
+                            <span class="day not-this-month">30</span>
+                            <span class="day not-this-month">31</span>
+                            <span class="day this-month">1</span>
+                            <span class="day this-month">2</span>
+                        </div>
+                        <div class="week second-week">
+                            <span class="day this-month">3</span>
+                            <span class="day this-month">4</span>
+                            <span class="day this-month">5</span>
+                            <span class="day this-month">6</span>
+                            <span class="day this-month">7</span>
+                            <span class="day this-month">8</span>
+                            <span class="day this-month">9</span>
+                        </div>
+                        <div class="week third-week">
+                            <span class="day this-month">10</span>
+                            <span class="day this-month">11</span>
+                            <span class="day this-month">12</span>
+                            <span class="day this-month">13</span>
+                            <span class="day this-month">14</span>
+                            <span class="day this-month">15</span>
+                            <span class="day this-month">16</span>
+                        </div>
+                        <div class="week fourth-week">
+                            <span class="day this-month">17</span>
+                            <span class="day this-month">18</span>
+                            <span class="day this-month">19</span>
+                            <span class="day this-month">20</span>
+                            <span class="day this-month">21</span>
+                            <span class="day this-month">22</span>
+                            <span class="day this-month">23</span>
+                        </div>
+                        <div class="week fifth-week">
+                            <span class="day this-month">24</span>
+                            <span class="day this-month">25</span>
+                            <span class="day this-month">26</span>
+                            <span class="day this-month">27</span>
+                            <span class="day this-month">28</span>
+                            <span class="day this-month">29</span>
+                            <span class="day this-month">30</span>
+                        </div>
+                        <div class="week sixth-week">
+                            <span class="day this-month">31</span>
+                            <span class="day not-this-month">1</span>
+                            <span class="day not-this-month">2</span>
+                            <span class="day not-this-month">3</span>
+                            <span class="day not-this-month">4</span>
+                            <span class="day not-this-month">5</span>
+                            <span class="day not-this-month">6</span>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="bit">&copy; baltic institute of technology</p>
+    </footer>
+</body>
+</html>
